@@ -6,8 +6,8 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *fonts[] = {
-	"Gohu GohuFont:pixelsize=11:antialias=false:autohint=false",
-	"Liberation Mono:pixelsize=12:antialias=true:autohint=true",
+	"Gohu GohuFont:pixelsize=11",
+	"Essential PragmataPro:style=Regular",
 };
 static size_t currentfont = 0;
 static int borderpx = 2;
@@ -95,7 +95,7 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
 float alpha = 0.8;
@@ -103,31 +103,31 @@ float alpha = 0.8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#0f1f2f",
+	"#7f2f4f",
+	"#4f7f2f",
+	"#7f4f2f",
+	"#2f4f7f",
+	"#4f2f7f",
+	"#2f7f4f",
+	"#6f7f8f",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#3f4f5f",
+	"#8f3f5f",
+	"#5f8f3f",
+	"#8f5f3f",
+	"#3f5f8f",
+	"#5f3f8f",
+	"#3f8f5f",
+	"#cfdfef",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
-	"black",
+	"#7f4f2f",
+	"#8f5f3f",
+	"#0f1f2f",
 };
 
 
