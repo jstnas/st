@@ -339,7 +339,7 @@ cyclefonts(const Arg *arg)
 	currentfont %= (sizeof fonts / sizeof fonts[0]);
 	usedfont = fonts[currentfont];
 	Arg larg;
-	larg.f = usedfontsize;
+	larg.f = 0;
 	zoomabs(&larg);
 }
 

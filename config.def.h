@@ -6,8 +6,8 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *fonts[] = {
-	"Gohu GohuFont:pixelsize=11",
-	"Essential PragmataPro:style=Regular",
+	"Gohu GohuFont",
+	"Essential PragmataPro:pixelsize=16",
 };
 static size_t currentfont = 0;
 static int borderpx = 2;
